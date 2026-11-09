@@ -1,0 +1,7 @@
+{
+  "name": "Demo (offline wellness page)",
+  "match": ["file://"],
+  "origins": [],
+  "hosts": {},
+  "defaultHost": null
+}

@@ -1,0 +1,15 @@
+{
+  "name": "weblens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Check the numbers a web app shows against an independent formula, live, by attaching to Chrome.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "chrome": "./scripts/chrome.sh",
+    "demo": "node src/cli.mjs run --profile demo --once",
+    "run": "node src/cli.mjs run",
+    "discover": "node src/cli.mjs discover",
+    "check": "node --check src/*.mjs && for f in snippets/*/*.js; do node --check \"$f\" || exit 1; done"
+  }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- A FICTIONAL wellness app page ("Calmly") for running weblens with no login and no network.
+     One value is wrong on purpose (the severity label) so the demo shows a Mismatch. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Calmly · Home (weblens demo)</title>
+  <style>
+    body { font: 15px/1.4 system-ui, sans-serif; max-width: 560px; margin: 24px auto; padding: 0 16px; color: #222; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 14px 16px; margin: 12px 0; }
+    .row { display: flex; justify-content: space-between; margin: 4px 0; }
+    h2 { font-size: 16px; margin: 0 0 8px; }
+    ul { margin: 0; padding-left: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Good morning</h1>
+
+  <div class="card">
+    <h2>Session credits</h2>
+    <div class="row"><span>Plan credits</span><span data-testid="credits-plan">8</span></div>
+    <ul data-testid="bookings">
+      <li data-testid="booking">Therapy · 3 Nov · completed</li>
+      <li data-testid="booking">Therapy · 10 Nov · completed</li>
+      <li data-testid="booking">Coaching · 17 Nov · upcoming</li>
+      <li data-testid="booking">Therapy · 24 Nov · upcoming</li>
+    </ul>
+    <div class="row"><span>Credits left</span><span>4</span></div>
+  </div>
+
+  <div class="card">
+    <h2>Mood this week</h2>
+    <div data-testid="mood-checkins">
+      <span data-testid="mood">3</span> <span data-testid="mood">4</span> <span data-testid="mood">2</span>
+      <span data-testid="mood">5</span> <span data-testid="mood">4</span> <span data-testid="mood">3</span>
+      <span data-testid="mood">4</span>
+    </div>
+    <div class="row"><span>Weekly average</span><span data-testid="mood-average">3.6</span></div>
+  </div>
+
+  <div class="card">
+    <h2>Check-in questionnaire (PHQ-9)</h2>
+    <ol>
+      <li>Little interest or pleasure <b data-testid="phq9-answer">2</b></li>
+      <li>Feeling down <b data-testid="phq9-answer">1</b></li>
+      <li>Sleep trouble <b data-testid="phq9-answer">2</b></li>
+      <li>Tired or little energy <b data-testid="phq9-answer">1</b></li>
+      <li>Appetite <b data-testid="phq9-answer">2</b></li>
+      <li>Feeling bad about yourself <b data-testid="phq9-answer">1</b></li>
+      <li>Trouble concentrating <b data-testid="phq9-answer">2</b></li>
+      <li>Moving or speaking slowly / restless <b data-testid="phq9-answer">2</b></li>
+      <li>Thoughts of self-harm <b data-testid="phq9-answer">1</b></li>
+    </ol>
+    <div class="row"><span>Total score</span><span data-testid="phq9-total">14</span></div>
+    <div class="row"><span>Severity</span><span data-testid="phq9-severity">Mild</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+node_modules/
+.chrome-profile/
+recordings/*
+!recordings/.gitkeep
+.DS_Store

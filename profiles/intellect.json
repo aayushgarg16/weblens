@@ -1,0 +1,15 @@
+{
+  "name": "Intellect web app",
+  "match": ["https://app.intellect.co/"],
+  "origins": ["https://app.intellect.co", "https://internal.intellect.co"],
+  "hosts": {
+    "app": "https://app.intellect.co/",
+    "api": "https://internal.intellect.co/"
+  },
+  "defaultHost": "api",
+  "_notes": [
+    "Hosts come from the public bundle (app.intellect.co/assets/index-*.js), read 2026-11-09 without logging in.",
+    "socket.internal.intellect.co carries live updates; app.sockets('socket.internal') reads the app's own frames.",
+    "Confirm both hosts with `npm run discover -- --profile intellect` after logging in; edit origins if the app calls others."
+  ]
+}
